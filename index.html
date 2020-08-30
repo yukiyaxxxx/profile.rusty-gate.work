@@ -16,18 +16,39 @@
 
     main {
       border: 1px solid rgba(150, 150, 150, 0.3);
+      padding: 5em;
+    }
+
+    .content {
+      display: flex;
+    }
+
+
+    .icon {
+      width: 100px;
+      min-width: 100px;
+    }
+
+    @media (max-width: 800px) {
+      .content {
+        display: block !important;
+      }
+
+      main {
+        padding: 2em;
+      }
     }
   </style>
 </head>
 <body>
 
-<main class="p-5">
+<main class="">
   <h1 class="mb-5 lts-2" style="letter-spacing: 0.6em;">
     Profile
   </h1>
-  <section class="d-flex">
+  <section class="content">
     <div class="imageBox">
-      <img src="./icon.jpg" alt="" width="100px">
+      <img src="./icon.jpg" alt="" class="icon">
     </div>
     <div class="pl-4">
       <h2 class="mt-0" style="letter-spacing: 0.3em;">
@@ -40,8 +61,7 @@
       <p>
         メインはlaravelでバックエンドですが、片手間にvueもさわります。<br>
         After Effectsによる動画編集も少しやります。<br>
-        気ままにツイッタやりつつたまに技術ブログを書き、<br>
-        最近は稀にOSSに触れたりもしています。
+        気ままにツイッタやりつつ思いついたら技術ブログを書き、最近は稀にOSSに触れたりもしています。
       </p>
       <p>
         たまに大阪のweb系イベントをひっそり見学しています
